@@ -16,7 +16,7 @@
 保存自动写 `.bak` 备份（上一次的文件内容）。
 
 **Q：界面语言？**
-默认中文，`lang.txt` 写 `en` 切英文（需配套 lang 表随包）。韩文等其他语言：欢迎联系开发者。
+默认中文。切英文：exe 旁 `config.json` 里 `"Language": "en"` 重启（`lang/en.tsv` 已随包）；切回删掉该行或写 `zh`。其他语言：欢迎联系开发者。
 
 **Q：Unity 里怎么读这些文件？**
 见「数据格式」：`.sff/.air/.snd` 是普通 JSON（附 MugenSdk 纯数据类）；`.gal` 按容器格式规范解析（zlib 块 + 头 XML）。
