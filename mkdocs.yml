@@ -28,30 +28,30 @@ plugins:
         - locale: en
           name: English
           build: true
+          # nav_translations 必须内嵌在语言条目里（插件级三语映射旧语法在 1.x 被静默忽略=导航不翻译）
+          nav_translations:
+            首页: Home
+            快速上手: Quick Start
+            使用手册: Manual
+            数据格式: Data Format
+            像素动画编辑器（gal）: Pixel Animation Editor (gal)
+            帧事件编辑器（sff/air/snd）: Frame Event Editor (sff/air/snd)
+            GIF 导出: GIF Export
+            常见问题: FAQ
+            .sff / .air / .snd 与 PAMSDK_Unity: .sff / .air / .snd with PAMSDK_Unity
         - locale: ko
           name: 한국어
           build: true
-      nav_translations:
-        en:
-          首页: Home
-          快速上手: Quick Start
-          使用手册: Manual
-          数据格式: Data Format
-          像素动画编辑器（gal）: Pixel Animation Editor (gal)
-          帧事件编辑器（sff/air/snd）: Frame Event Editor (sff/air/snd)
-          GIF 导出: GIF Export
-          常见问题: FAQ
-          .sff / .air / .snd 与 PAMSDK_Unity: .sff / .air / .snd with PAMSDK_Unity
-        ko:
-          首页: 홈
-          快速上手: 빠른 시작
-          使用手册: 사용 설명서
-          数据格式: 데이터 포맷
-          像素动画编辑器（gal）: 픽셀 애니메이션 편집기 (gal)
-          帧事件编辑器（sff/air/snd）: 프레임 이벤트 편집기 (sff/air/snd)
-          GIF 导出: GIF 내보내기
-          常见问题: 자주 묻는 질문
-          .sff / .air / .snd 与 PAMSDK_Unity: .sff / .air / .snd 및 PAMSDK_Unity
+          nav_translations:
+            首页: 홈
+            快速上手: 빠른 시작
+            使用手册: 사용 설명서
+            数据格式: 데이터 포맷
+            像素动画编辑器（gal）: 픽셀 애니메이션 편집기 (gal)
+            帧事件编辑器（sff/air/snd）: 프레임 이벤트 편집기 (sff/air/snd)
+            GIF 导出: GIF 내보내기
+            常见问题: 자주 묻는 질문
+            .sff / .air / .snd 与 PAMSDK_Unity: .sff / .air / .snd 및 PAMSDK_Unity
 nav:
   - 首页: index.md
   - 快速上手: quickstart.md
