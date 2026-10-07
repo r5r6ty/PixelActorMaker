@@ -1,0 +1,25 @@
+site_name: 像素角色制作大师 · PixelActorMaker
+site_description: 像素角色动画与帧事件编辑器 —— 图层/调色板/多轨时间轴/帧事件/GIF 导出
+site_url: https://r5r6ty.github.io/PixelActorMaker/
+repo_url: https://github.com/r5r6ty/PixelActorMaker
+theme:
+  name: material
+  language: zh
+  features:
+    - content.code.copy
+    - navigation.sections
+    - search.highlight
+palette:
+  - scheme: default
+    primary: indigo
+nav:
+  - 首页: index.md
+  - 快速上手: quickstart.md
+  - 使用手册:
+      - 像素动画编辑器（gal）: manual/gal-editor.md
+      - 帧事件编辑器（sff/air/snd）: manual/main-editor.md
+      - GIF 导出: manual/gif-export.md
+      - 常见问题: manual/faq.md
+  - 数据格式:
+      - .gal 容器格式: format/gal-format.md
+      - .sff / .air / .snd 与 MugenSdk: format/sff-air-snd.md
