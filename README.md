@@ -20,12 +20,12 @@
 ## 本地预览
 
 ```bash
-pip install mkdocs-material
+pip install mkdocs-material mkdocs-static-i18n
 mkdocs serve     # http://127.0.0.1:8000
 ```
 
 ## 以后怎么写
 
 - 直接改 `docs/` 下的 Markdown，push 即自动发布。
-- 英文版后续加：建 `docs/en/` 子树 + mkdocs i18n 插件（与软件内 i18n 同批推进）。
+- 多语言（2026-10-07 起）：中文=根 `docs/`（默认语言），English=`docs/en/`，한국어=`docs/ko/`（mkdocs-static-i18n folder 模式，语言切换器在页面顶栏）。**改中文内容后记得同步 en/ko 对应文件**；新增页面三份都要建（同名同相对路径）。
 - 录制 2-3 分钟的操作 GIF（OBS → mp4 → 转 GIF），塞进对应手册页即可。
