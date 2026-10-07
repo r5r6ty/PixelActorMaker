@@ -27,4 +27,5 @@
 
 - 类名与你的工程冲突时可以随意改名，JSON `"type"` 判别值不变。
 - 三个文件由编辑器以「同目录同名三件套」整体保存（Ctrl+S）。
+- **Unity 导入**：`.sff/.air/.snd` 扩展名 Unity 不认（进不了 TextAsset）。编辑器另存为时「保存类型」选 **JSON 角色（Unity）**，即得 `角色.sff.json/.air.json/.snd.json` 三件——TextAsset 直读 `text` 字段后交给 Newtonsoft + MugenSdk 数据类即可。
 - 格式由 `Tools/MugenSdk/check_fields.py` 账本核对；游戏侧 Mugen.cs 字段变更会同步 SDK。
