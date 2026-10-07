@@ -14,4 +14,4 @@
 
 ## 数据在游戏引擎里使用
 
-见「数据格式」两页：`.gal` 容器格式规范 + `.sff`/`.air`/`.snd` JSON 结构（附 MugenSdk 纯数据类，可直接放进 Unity 工程）。
+见「数据格式」：`.sff`/`.air`/`.snd` 是 JSON 文本（附 MugenSdk 纯数据类，可直接放进 Unity 工程）；像素动画为 GraphicsGale 兼容的 `.gal` 格式。

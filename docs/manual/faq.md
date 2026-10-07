@@ -19,4 +19,4 @@
 默认中文。切英文：exe 旁 `config.json` 里 `"Language": "en"` 重启（`lang/en.tsv` 已随包）；切回删掉该行或写 `zh`。其他语言：欢迎联系开发者。
 
 **Q：Unity 里怎么读这些文件？**
-见「数据格式」：`.sff/.air/.snd` 是普通 JSON（附 MugenSdk 纯数据类）；`.gal` 按容器格式规范解析（zlib 块 + 头 XML）。
+见「数据格式」：`.sff/.air/.snd` 是普通 JSON（附 MugenSdk 纯数据类）；像素动画是 GraphicsGale 兼容的 `.gal` 格式。
