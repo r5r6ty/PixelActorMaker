@@ -1,4 +1,7 @@
 site_name: PixelActorMaker
+# 目录式 URL（/page/）只有 HTTP 服务器能自动补 index.html，file:// 离线打开会变成目录列表
+# （2026-10-08 用户实测）——关掉它，所有链接直指具体 .html，离线/在线两端都正常
+use_directory_urls: false
 site_description: 像素角色动画与帧事件编辑器 —— 图层/调色板/多轨时间轴/帧事件/GIF 导出
 site_url: https://r5r6ty.github.io/PixelActorMaker/
 repo_url: https://github.com/r5r6ty/PixelActorMaker
