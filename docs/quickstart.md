@@ -1,7 +1,7 @@
 # 快速上手
 
 1. 解压发布包，双击 `PixelActorMaker.exe`（Windows 10/11 x64，免安装，**所有文件保持在一起**：exe 旁的几个 dll 与 `gale_ops` 文件夹是运行必需）。
-2. 界面语言：默认中文；英文 = exe 旁 `config.json` 里把 `"Language": null` 改成 `"Language": "en"`，重启生效（`lang/en.tsv` 已随包）。
+2. 界面语言：默认中文，支持中文/English/한국어——菜单 **帮助 → 首选项 → 系统 → 语言** 下拉切换（确定即时生效）；或 exe 旁 `config.json` 的 `"Language"` 写 `en`/`ko`，重启生效（lang 表已随包）。
 3. 个性化自动记住：窗口位置/大小、gal 编辑器的工具/洋葱皮/预览缩放（exe 旁 `config.json`）、悬浮窗位置布局（`imgui.ini`），都是退出时自动保存，无需手动管理。
 4. 两条制作路线：
    - **像素动画**：菜单「新建」或「打开」一个 `.gal` → 多轨时间轴逐帧绘制 → 「导出GIF…」看效果。
