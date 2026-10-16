@@ -8,18 +8,19 @@ repo_url: https://github.com/r5r6ty/PixelActorMaker
 theme:
   name: material
   language: zh
+  # palette 必须在 theme 下（顶层挂法 mkdocs 2.0 起报警告且不生效；indigo=material 默认主色，迁移前视觉恰好一致）
+  palette:
+    - scheme: default
+      primary: indigo
   features:
     - content.code.copy
     - navigation.sections
     - search.highlight
-palette:
-  - scheme: default
-    primary: indigo
 plugins:
   - search
   - i18n:
       docs_structure: folder
-      default_language: zh
+      # default_language 已废弃：默认语言由语言条目的 default: true 声明（mkdocs-static-i18n 新版报未识别配置）
       languages:
         - locale: zh
           name: 中文
