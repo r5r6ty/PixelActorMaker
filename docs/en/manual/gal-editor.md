@@ -5,6 +5,7 @@
 ## Multi-track timeline
 
 - Each **track** = an independently editable `.gal` document (no master/sub relationship — all tracks are equal).
+- Eye/lock icons at each track row's left edge (session-only, not stored in the gal file): eye = preview/export skip this track entirely (playback, float preview, GIF export and A/D stepping share the rule); lock = content operations disabled for this track (cannot be selected or frame-edited; the name menu's reset-offset / hide-all are disabled too; reordering/closing remain available). The current track is always unlocked.
 - Tracks can be dragged horizontally to different positions on the timeline (the Offset column; may be negative); frame f sits in column f+Offset.
 - Playback preview / GIF export = compositing the tracks' frames **per column** (list order = stacking order, bottom layer drawn first).
 - `A`/`D` = step columns (current track first, top to bottom, first track with a frame, wrapping); `W`/`S` = switch layer; `Space` = play.
@@ -36,6 +37,13 @@
 - Right-click color pick (canvas) with Shift = pick the **composited display color** (on 8bpp, exact index match against the current palette).
 - Color depth: a new `.gal` defaults to **8bpp (indexed)**; the menu "All frames (current track name) → Color depth" switches 8bpp ↔ 24bpp (truecolor) document-wide — every frame × every layer converted in one undo step.
 - On 24bpp (non-indexed) frames the palette panel shows the bundled `default.pal` reference palette (read-only color picking; the status line shows the current #RRGGBB).
+
+## 2D reference
+
+- Menu "2D reference" (sits left of "3D reference") → enable: a reference panel appears in the right column, same slot as the 3D reference — with both open, 2D sits to the left of the 3D column; with only 2D, it takes the rightmost slot. Panel: "Open image…" (multi-select) and "Open folder…" (images listed sorted by name); right-click a list item to "Remove", "Clear all" at the bottom.
+- Formats: png/jpg/jpeg/bmp/gif/tga/psd; gif is decoded frame-by-frame by the built-in decoder (disposal composition, interlace restore, 0/1cs delays normalized to 100ms).
+- Controls live on the panel (3D-reference style: above the list, the float window shows only the picture). GIF: either "Follow frames" (maps elapsed time from frame 0 to the current frame of the current track onto the GIF timeline, looping) or "Play" (free loop by frame delays, adjustable speed); "Canvas overlay" = onion-skin ghost drawn over the canvas for tracing (bottom pinned to the canvas bottom / 92% height / horizontally centered, time always follows the current edit frame) with a "Canvas mirror" sub-toggle flipping the overlay; "Flip horizontally" flips the float-window picture (2D-specific — 3D rotates the camera with numpad keys).
+- Float window: static images display directly, GIFs show the current frame; fit-centered, zoom-in snaps to integer scales to keep pixels crisp. This module ships in the distribution build (fully localized).
 
 ## Undo and saving
 

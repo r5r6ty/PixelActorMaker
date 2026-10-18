@@ -31,5 +31,6 @@ Each animation frame can carry multiple events; the `"type"` field discriminates
 - `Ctrl+S` save (Save As first when no path); duplicate action/group/sound names are rejected before saving (names are dictionary keys on the engine side).
 - Group right-click / double-click = enter the gal editor for that image group (multi-track append, keeps your place).
 - Import entries live in each row's right-click menu: gal = image-group row; palette = palette row (a single `.pal` / a `.gal` takes the first frame's palette, both re-importable); sound = sound row.
+- Actions / image groups / sounds all support drag-to-reorder: hold and drag 6 px to start moving, a yellow line marks the insertion point (horizontal lists use the mouse's left/right half), undo is pushed on the first actual placement; the right-click menu's move-front/back still work.
 - Undo `Ctrl+Z` / redo `Ctrl+Y`, the history panel can jump.
 - Preview bloom: toolbar "Post-processing" menu (glow data comes from each palette color's "glow" channel).
